@@ -24,9 +24,9 @@ const Navbar = () => {
               fontSize="xl"
               fontWeight="600"
               _hover={{
-                color: "#19D8C8",
+                color: "#00B9E8",
                 borderBottom: "5px solid",
-                borderColor: "#19D8C8",
+                borderColor: "#00B9E8",
               }}
             >
               About
@@ -37,9 +37,9 @@ const Navbar = () => {
               fontSize="xl"
               fontWeight="600"
               _hover={{
-                color: "#19D8C8",
+                color: "#00B9E8",
                 borderBottom: "5px solid",
-                borderColor: "#19D8C8",
+                borderColor: "#00B9E8",
               }}
             >
               Skills
@@ -50,9 +50,9 @@ const Navbar = () => {
               fontSize="xl"
               fontWeight="600"
               _hover={{
-                color: "#19D8C8",
+                color: "#00B9E8",
                 borderBottom: "5px solid",
-                borderColor: "#19D8C8",
+                borderColor: "#00B9E8",
               }}
             >
               Projects
@@ -63,9 +63,9 @@ const Navbar = () => {
               fontSize="xl"
               fontWeight="600"
               _hover={{
-                color: "#19D8C8",
+                color: "#00B9E8",
                 borderBottom: "5px solid",
-                borderColor: "#19D8C8",
+                borderColor: "#00B9E8",
               }}
             >
               Contact
@@ -76,9 +76,9 @@ const Navbar = () => {
               fontSize="xl"
               fontWeight="600"
               _hover={{
-                color: "#19D8C8",
+                color: "#00B9E8",
                 borderBottom: "5px solid",
-                borderColor: "#19D8C8",
+                borderColor: "#00B9E8",
               }}
             >
               Theme
