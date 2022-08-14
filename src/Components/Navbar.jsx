@@ -3,24 +3,86 @@ import { Box, Flex, HStack, Img, Text } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <Box>
-      <Flex justifyContent="space-between" padding="20px" borderBottom="2px solid lightgray">
-        <Box><Img src="" alt="logo" /></Box>
+    <Box borderBottom="2px solid lightgray">
+      <Flex
+        justifyContent="space-between"
+        width="90%"
+        alignContent="center"
+        margin="auto"
+      >
+        <Box>
+          <Img
+            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/Logo.png?raw=true"
+            alt="logo"
+            width="20"
+            height="20"
+          />
+        </Box>
         <HStack gap={10}>
           <Box>
-            <Text fontSize='xl' fontWeight="600" _hover={{color:"#19D8C8", borderBottom:"5px solid", borderColor:"#19D8C8"}}>About</Text>
+            <Text
+              fontSize="xl"
+              fontWeight="600"
+              _hover={{
+                color: "#19D8C8",
+                borderBottom: "5px solid",
+                borderColor: "#19D8C8",
+              }}
+            >
+              About
+            </Text>
           </Box>
           <Box>
-            <Text fontSize='xl' fontWeight="600" _hover={{color:"#19D8C8", borderBottom:"5px solid", borderColor:"#19D8C8"}}>Skills</Text>
+            <Text
+              fontSize="xl"
+              fontWeight="600"
+              _hover={{
+                color: "#19D8C8",
+                borderBottom: "5px solid",
+                borderColor: "#19D8C8",
+              }}
+            >
+              Skills
+            </Text>
           </Box>
           <Box>
-            <Text fontSize='xl' fontWeight="600" _hover={{color:"#19D8C8", borderBottom:"5px solid", borderColor:"#19D8C8"}}>Projects</Text>
+            <Text
+              fontSize="xl"
+              fontWeight="600"
+              _hover={{
+                color: "#19D8C8",
+                borderBottom: "5px solid",
+                borderColor: "#19D8C8",
+              }}
+            >
+              Projects
+            </Text>
           </Box>
           <Box>
-            <Text fontSize='xl' fontWeight="600" _hover={{color:"#19D8C8", borderBottom:"5px solid", borderColor:"#19D8C8"}}>Contact</Text>
+            <Text
+              fontSize="xl"
+              fontWeight="600"
+              _hover={{
+                color: "#19D8C8",
+                borderBottom: "5px solid",
+                borderColor: "#19D8C8",
+              }}
+            >
+              Contact
+            </Text>
           </Box>
           <Box>
-            <Text fontSize='xl' fontWeight="600" _hover={{color:"#19D8C8", borderBottom:"5px solid", borderColor:"#19D8C8"}}>Theme</Text>
+            <Text
+              fontSize="xl"
+              fontWeight="600"
+              _hover={{
+                color: "#19D8C8",
+                borderBottom: "5px solid",
+                borderColor: "#19D8C8",
+              }}
+            >
+              Theme
+            </Text>
           </Box>
         </HStack>
       </Flex>
