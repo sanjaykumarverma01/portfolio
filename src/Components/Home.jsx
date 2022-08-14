@@ -1,4 +1,12 @@
-import { Box, Button, Flex, Img, Link, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Img,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 import About from "./About";
 import Navbar from "./Navbar";
@@ -58,9 +66,9 @@ const Home = () => {
           />
         </Box>
       </Flex>
-      <Box mt="4rem">
+      <Box mt="5rem">
         <Box>
-          <Text fontSize="4xl">Get in Touch</Text>
+          <Heading>Get in Touch</Heading>
           <Text fontSize="18px" mt=".5rem">
             Whether you want to get in touch, or talk about a project
             collaboration
@@ -77,7 +85,7 @@ const Home = () => {
             href="https://www.linkedin.com/in/sanjaykumar-verma-a73349219/"
             target="_blank"
           >
-            <BsLinkedin fontSize="40px" _hover={{bgColor:"blue"}}/>
+            <BsLinkedin fontSize="40px" _hover={{ bgColor: "blue" }} />
           </a>
         </Flex>
       </Box>

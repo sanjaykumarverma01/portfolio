@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Flex, HStack, Img, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Img, Link, Text } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
-    <Box borderBottom="2px solid lightgray">
+    <Box boxShadow="base" position="sticky" top="0" bg="white">
       <Flex
         justifyContent="space-between"
         width="90%"
