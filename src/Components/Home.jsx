@@ -5,11 +5,14 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import { HiDownload } from "react-icons/hi";
+import { saveAs } from "file-saver";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 const Home = () => {
   const handleDownload = async () => {
-    let b = await fetch(
-      `https://drive.google.com/file/d/1a-brFO6i8iEOAFy2VQzmrc8WQs_PGIeD/view?usp=sharing`
-    ).then((res) => res.blob());
+    saveAs(
+      "https://drive.google.com/file/d/1a-brFO6i8iEOAFy2VQzmrc8WQs_PGIeD/view?usp=sharing",
+      "Sanjaykumar_Resume.pdf"
+    );
   };
 
   return (
@@ -55,6 +58,30 @@ const Home = () => {
           />
         </Box>
       </Flex>
+      <Box mt="4rem">
+        <Box>
+          <Text fontSize="4xl">Get in Touch</Text>
+          <Text fontSize="18px" mt=".5rem">
+            Whether you want to get in touch, or talk about a project
+            collaboration
+          </Text>
+          <Text fontSize="18px" fontWeight="500" mt=".5rem">
+            Feel free to contact me
+          </Text>
+        </Box>
+        <Flex width="10%" margin="auto" justifyContent="space-evenly" mt="1rem">
+          <a href="https://github.com/SK-WebDeveloper" target="_blank">
+            <BsGithub fontSize="40px" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sanjaykumar-verma-a73349219/"
+            target="_blank"
+          >
+            <BsLinkedin fontSize="40px" _hover={{bgColor:"blue"}}/>
+          </a>
+        </Flex>
+      </Box>
+
       <About />
       <Skills />
       <Projects />
