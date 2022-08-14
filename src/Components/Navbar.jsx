@@ -12,7 +12,7 @@ const Navbar = () => {
       >
         <Box>
           <Img
-            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/Logo.png?raw=true"
+            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/logo%20png.png?raw=true"
             alt="logo"
             width="20"
             height="20"
