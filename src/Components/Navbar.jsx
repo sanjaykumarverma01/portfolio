@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, HStack, Img, Link, Text } from "@chakra-ui/react";
-
+import { Switch } from "@chakra-ui/react";
 const Navbar = () => {
   return (
     <Box boxShadow="base" position="sticky" top="0" bg="white">
@@ -72,17 +72,7 @@ const Navbar = () => {
             </Text>
           </Box>
           <Box>
-            <Text
-              fontSize="xl"
-              fontWeight="600"
-              _hover={{
-                color: "#00B9E8",
-                borderBottom: "5px solid",
-                borderColor: "#00B9E8",
-              }}
-            >
-              Theme
-            </Text>
+            <Switch size="md" />
           </Box>
         </HStack>
       </Flex>
