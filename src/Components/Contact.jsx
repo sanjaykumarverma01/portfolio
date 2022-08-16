@@ -3,10 +3,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <Box className="contact">
-      <Heading mt="7rem" mb="5rem">
-        Contact Us!
-      </Heading>
+    <Box className="contact" pt="7rem">
+      <Heading mb="5rem">Contact Us!</Heading>
     </Box>
   );
 };

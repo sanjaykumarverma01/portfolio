@@ -11,8 +11,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box className="about">
-      <Heading mt="5rem" mb="6rem">
+    <Box className="about" pt="5rem">
+      <Heading mb="6rem">
         About Me
       </Heading>
       <Flex
@@ -54,6 +54,7 @@ const About = () => {
           <Img
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/profile-pic.png?raw=true"
             alt="My"
+            borderRadius="20px"
           />
         </Box>
       </Flex>

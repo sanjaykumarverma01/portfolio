@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <Box className="main" top={10}>
+    <Box className="main" pt="50px" >
       <Flex justifyContent="space-around" mt="2rem">
         <Box w="40%">
           <Text fontSize="5xl" fontWeight="400" textAlign="justify">
@@ -40,6 +40,7 @@ const Home = () => {
               border: "1px solid",
               borderColor: "#00B9E8",
             }}
+            zIndex={700}
           >
             <HiDownload />
             RESUME

@@ -5,7 +5,14 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <Box boxShadow="base" position="sticky" top="0" bg="white" className="navbar" mb="2rem">
+    <Box
+      boxShadow="base"
+      position="sticky"
+      top="0"
+      bg="white"
+      className="navbar"
+      zIndex={1000}
+    >
       <Flex
         justifyContent="space-between"
         width="90%"
