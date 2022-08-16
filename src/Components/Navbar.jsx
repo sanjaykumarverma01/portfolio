@@ -14,12 +14,17 @@ import { BsFillMoonFill, BsSun } from "react-icons/bs";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  if (colorMode === "dark") {
+    var bgColor = "#1A202C";
+  } else {
+    var bgColor = "white";
+  }
   return (
     <Box
       boxShadow="base"
       position="sticky"
       top="0"
-      opacity={10}
+      bgColor={bgColor}
       className="navbar"
       zIndex={1000}
     >

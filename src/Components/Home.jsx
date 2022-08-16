@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <Box className="main" pt="50px" >
+    <Box className="main" pt="60px" >
       <Flex justifyContent="space-around" mt="2rem">
         <Box w="40%">
           <Text fontSize="5xl" fontWeight="400" textAlign="justify">
