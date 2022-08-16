@@ -11,7 +11,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box className="about" pt="5rem">
+    <Box className="about" pt="6rem">
       <Heading mb="6rem">
         About Me
       </Heading>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <Box className="contact" pt="7rem">
+    <Box className="contact" pt="6rem">
       <Heading mb="5rem">Contact Us!</Heading>
     </Box>
   );

@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <Box className="main" pt="60px" >
+    <Box className="main" pt="70px">
       <Flex justifyContent="space-around" mt="2rem">
         <Box w="40%">
           <Text fontSize="5xl" fontWeight="400" textAlign="justify">
@@ -68,15 +68,19 @@ const Home = () => {
           </Text>
         </Box>
         <Flex width="10%" margin="auto" justifyContent="space-evenly" mt="1rem">
-          <a href="https://github.com/SK-WebDeveloper" target="_blank">
-            <BsGithub fontSize="40px" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sanjaykumar-verma-a73349219/"
-            target="_blank"
-          >
-            <BsLinkedin fontSize="40px" _hover={{ bgColor: "blue" }} />
-          </a>
+          <Box _hover={{ color: "teal" }}>
+            <a href="https://github.com/SK-WebDeveloper" target="_blank">
+              <BsGithub fontSize="40px" />
+            </a>
+          </Box>
+          <Box _hover={{ bgColor: "#0A66C2" }}>
+            <a
+              href="https://www.linkedin.com/in/sanjaykumar-verma-a73349219/"
+              target="_blank"
+            >
+              <BsLinkedin fontSize="40px" />
+            </a>
+          </Box>
         </Flex>
       </Box>
     </Box>

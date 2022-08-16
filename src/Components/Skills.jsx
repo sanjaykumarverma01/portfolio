@@ -4,7 +4,7 @@ import SkillCard from "./SkillCard";
 
 const Skills = () => {
   return (
-    <Box className="skills" pt="5rem">
+    <Box className="skills" pt="6rem">
       <Heading mb="5rem">Skills</Heading>
       <Heading mb="4rem" color="#00B9E8">
         Developement Tools
