@@ -1,20 +1,9 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Img,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Img, Text } from "@chakra-ui/react";
 import React from "react";
-import About from "./About";
-import Navbar from "./Navbar";
-import Projects from "./Projects";
-import Skills from "./Skills";
 import { HiDownload } from "react-icons/hi";
 import { saveAs } from "file-saver";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+
 const Home = () => {
   const handleDownload = async () => {
     saveAs(
@@ -24,8 +13,7 @@ const Home = () => {
   };
 
   return (
-    <>
-      <Navbar />
+    <Box className="main" top={10}>
       <Flex justifyContent="space-around" mt="2rem">
         <Box w="40%">
           <Text fontSize="5xl" fontWeight="400" textAlign="justify">
@@ -89,11 +77,7 @@ const Home = () => {
           </a>
         </Flex>
       </Box>
-
-      <About />
-      <Skills />
-      <Projects />
-    </>
+    </Box>
   );
 };
 

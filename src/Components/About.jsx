@@ -11,8 +11,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box>
-      <Heading mt="6rem" mb="6rem">
+    <Box className="about">
+      <Heading mt="5rem" mb="6rem">
         About Me
       </Heading>
       <Flex
