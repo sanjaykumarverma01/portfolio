@@ -1,15 +1,25 @@
 import React from "react";
-import { Box, Flex, HStack, Img, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Img,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 import { Switch } from "@chakra-ui/react";
 import { Link } from "react-scroll";
+import { BsFillMoonFill, BsSun } from "react-icons/bs";
 
 const Navbar = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box
       boxShadow="base"
       position="sticky"
       top="0"
-      bg="white"
+      opacity={10}
       className="navbar"
       zIndex={1000}
     >
@@ -54,6 +64,7 @@ const Navbar = () => {
                   borderBottom: "5px solid",
                   borderColor: "#00B9E8",
                   cursor: "pointer",
+                  borderRadius: "5px",
                 }}
               >
                 About
@@ -77,6 +88,7 @@ const Navbar = () => {
                   borderBottom: "5px solid",
                   borderColor: "#00B9E8",
                   cursor: "pointer",
+                  borderRadius: "5px",
                 }}
               >
                 Skills
@@ -100,6 +112,7 @@ const Navbar = () => {
                   borderBottom: "5px solid",
                   borderColor: "#00B9E8",
                   cursor: "pointer",
+                  borderRadius: "5px",
                 }}
               >
                 Projects
@@ -123,6 +136,7 @@ const Navbar = () => {
                   borderBottom: "5px solid",
                   borderColor: "#00B9E8",
                   cursor: "pointer",
+                  borderRadius: "5px",
                 }}
               >
                 Contact
@@ -130,7 +144,19 @@ const Navbar = () => {
             </Link>
           </Box>
           <Box _hover={{ cursor: "pointer" }}>
-            <Switch size="md" />
+            <Button
+              size="lg"
+              colorScheme="blue"
+              onClick={toggleColorMode}
+              variant="ghost"
+              _hover={{
+                color: "#00B9E8",
+                borderBottom: "5px solid",
+                borderColor: "#00B9E8",
+              }}
+            >
+              {colorMode === "light" ? <BsFillMoonFill /> : <BsSun />}
+            </Button>
           </Box>
         </HStack>
       </Flex>

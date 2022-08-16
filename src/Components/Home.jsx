@@ -52,6 +52,7 @@ const Home = () => {
             h="350px"
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/home.gif?raw=true"
             alt="Home Page"
+            borderRadius="3px"
           />
         </Box>
       </Flex>
