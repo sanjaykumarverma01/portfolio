@@ -1,4 +1,12 @@
-import { Box, Button, Flex, Heading, Img, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Img,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 import React from "react";
 import { HiDownload } from "react-icons/hi";
 import { saveAs } from "file-saver";
@@ -11,6 +19,30 @@ const Home = () => {
       "Sanjaykumar_Resume.pdf"
     );
   };
+
+  const { colorMode, toggleColorMode } = useColorMode();
+  if (colorMode === "dark") {
+    // normal
+    var bc = "2px solid rgb(150, 150, 226)";
+    var tc = "#93989E";
+    var bgC = "#222e3d";
+    
+    // hover
+    var bc1 = "2px solid #00B9E8";
+    var tc1 = "#00B9E8";
+    var bgC1 = "#222e3d";
+    
+  }
+  if (colorMode === "light") {
+    // normal
+    var bc = "2px solid white";
+    var tc = "white";
+    var bgC = "#00B9E8";
+    // hover
+    var bc1 = "2px solid #00B9E8";
+    var tc1 = "#00B9E8";
+    var bgC1 = "white";
+  }
 
   return (
     <Box className="main" pt="70px">
@@ -32,13 +64,13 @@ const Home = () => {
           <Button
             onClick={handleDownload}
             mt="1rem"
-            bgColor="#00B9E8"
-            color="white"
+            bgColor={bgC}
+            color={tc}
+            border={bc}
             _hover={{
-              color: "#00B9E8",
-              bgColor: "white",
-              border: "1px solid",
-              borderColor: "#00B9E8",
+              color: tc1,
+              bgColor: bgC1,
+              border: bc1,
             }}
             zIndex={700}
           >
@@ -58,7 +90,7 @@ const Home = () => {
       </Flex>
       <Box mt="5rem">
         <Box>
-          <Heading>Get in Touch</Heading>
+          <Heading color={tc}>Get in Touch</Heading>
           <Text fontSize="18px" mt=".5rem">
             Whether you want to get in touch, or talk about a project
             collaboration

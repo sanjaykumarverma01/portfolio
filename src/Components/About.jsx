@@ -6,15 +6,19 @@ import {
   ListItem,
   Text,
   UnorderedList,
+  useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
 
 const About = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  if (colorMode === "dark") {
+    var bc = "2px solid rgb(150, 150, 226)";
+    var tc = "#93989E"
+  }
   return (
     <Box className="about" pt="6rem">
-      <Heading mb="6rem">
-        About Me
-      </Heading>
+      <Heading mb="6rem" color={tc}>About Me</Heading>
       <Flex
         width="80%"
         margin="auto"
@@ -41,16 +45,14 @@ const About = () => {
           <Text fontSize="xl" mt="1rem">
             Apart from coding, some other activities that I love to do!
           </Text>
-          <Text ml="1rem" fontSize="xl">
-            <UnorderedList fontWeight="500">
-              <ListItem>Playing Video Games</ListItem>
-              <ListItem>Making Vlogs</ListItem>
-              <ListItem>Watching Movies & Web Series</ListItem>
-              <ListItem>Bike Riding</ListItem>
-            </UnorderedList>
-          </Text>
+          <UnorderedList fontWeight="500">
+            <ListItem>Playing Video Games</ListItem>
+            <ListItem>Making Vlogs</ListItem>
+            <ListItem>Watching Movies & Web Series</ListItem>
+            <ListItem>Bike Riding</ListItem>
+          </UnorderedList>
         </Box>
-        <Box width="40%">
+        <Box width="40%" borderRadius="20px" border={bc}>
           <Img
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/profile-pic.png?raw=true"
             alt="My"

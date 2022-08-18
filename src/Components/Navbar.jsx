@@ -15,8 +15,10 @@ import { BsFillMoonFill, BsSun } from "react-icons/bs";
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   if (colorMode === "dark") {
-    var bgColor = "#1A202C";
-  } else {
+    var bgColor = "#222e3d";
+    var tc = "#93989E"
+  } 
+  else{
     var bgColor = "white";
   }
   return (
@@ -33,6 +35,7 @@ const Navbar = () => {
         width="90%"
         alignContent="center"
         margin="auto"
+        color={tc}
       >
         <Box _hover={{ cursor: "pointer" }}>
           <Link
