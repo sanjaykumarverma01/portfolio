@@ -3,10 +3,12 @@ import {
   Button,
   Flex,
   Heading,
-  Image,
   Img,
   useColorMode,
+  Link,
+  Text,
 } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import React from "react";
 
 const Projects = () => {
@@ -16,6 +18,7 @@ const Projects = () => {
     var bc = "2px solid rgb(150, 150, 226)";
     var tc = "#93989E";
     var bgC = "#222e3d";
+    var textC = "#93989E";
 
     // hover
     var bc1 = "2px solid #00B9E8";
@@ -24,17 +27,21 @@ const Projects = () => {
   }
   if (colorMode === "light") {
     // normal
-    var bc = "2px solid white";
-    var tc = "white";
-    var bgC = "#00B9E8";
+    bc = "2px solid white";
+    tc = "white";
+    bgC = "#00B9E8";
+    var textC = "#00B9E8";
+
     // hover
-    var bc1 = "2px solid #00B9E8";
-    var tc1 = "#00B9E8";
-    var bgC1 = "white";
+    bc1 = "2px solid #00B9E8";
+    tc1 = "#00B9E8";
+    bgC1 = "white";
   }
   return (
     <Box className="projects" pt="6rem">
-      <Heading mb="5rem">Projects</Heading>
+      <Heading mb="5rem" color={textC}>
+        Projects
+      </Heading>
       <Flex
         m="auto"
         textAlign="center"
@@ -55,32 +62,49 @@ const Projects = () => {
             borderTopRadius="10px"
           />
           <Flex justifyContent="space-around" p="10px">
-            <Button
-              bgColor={bgC}
-              color={tc}
-              border={bc}
-              _hover={{
-                color: tc1,
-                bgColor: bgC1,
-                border: bc1,
-              }}
-              zIndex={700}
+            <Link
+              href="https://github.com/SK-WebDeveloper/Bath-Body-Works"
+              target="_blank"
+              style={{ textDecoration: "none" }}
             >
-              GitHub
-            </Button>
-            <Button
-              bgColor={bgC}
-              color={tc}
-              border={bc}
-              _hover={{
-                color: tc1,
-                bgColor: bgC1,
-                border: bc1,
-              }}
-              zIndex={700}
+              <Button
+                className="dev"
+                bgColor={bgC}
+                color={tc}
+                border={bc}
+                _hover={{
+                  color: tc1,
+                  bgColor: bgC1,
+                  border: bc1,
+                }}
+                zIndex={700}
+              >
+                GitHub
+              </Button>
+            </Link>
+            <Text color={textC} fontWeight="500" pt="5px">
+              Bath & Body Works
+            </Text>
+            <Link
+              href="https://bathandbodywork.netlify.app/"
+              style={{ textDecoration: "none" }}
+              target="_blank"
             >
-              Preview
-            </Button>
+              <Button
+                className="dev"
+                bgColor={bgC}
+                color={tc}
+                border={bc}
+                _hover={{
+                  color: tc1,
+                  bgColor: bgC1,
+                  border: bc1,
+                }}
+                zIndex={700}
+              >
+                Preview <ExternalLinkIcon mx="2px" ml="7px" />
+              </Button>
+            </Link>
           </Flex>
         </Box>
         <Box
@@ -96,32 +120,41 @@ const Projects = () => {
             borderTopRadius="10px"
           />
           <Flex justifyContent="space-around" p="10px">
-            <Button
-              bgColor={bgC}
-              color={tc}
-              border={bc}
-              _hover={{
-                color: tc1,
-                bgColor: bgC1,
-                border: bc1,
-              }}
-              zIndex={700}
-            >
-              GitHub
-            </Button>
-            <Button
-              bgColor={bgC}
-              color={tc}
-              border={bc}
-              _hover={{
-                color: tc1,
-                bgColor: bgC1,
-                border: bc1,
-              }}
-              zIndex={700}
-            >
-              Preview
-            </Button>
+            <Link>
+              <Button
+                className="dev"
+                bgColor={bgC}
+                color={tc}
+                border={bc}
+                _hover={{
+                  color: tc1,
+                  bgColor: bgC1,
+                  border: bc1,
+                }}
+                zIndex={700}
+              >
+                GitHub
+              </Button>
+            </Link>
+            <Text color={textC} fontWeight="500" pt="5px">
+              Bath & Body Works
+            </Text>
+            <Link href="" target="_blank" style={{ textDecoration: "none" }}>
+              <Button
+                className="dev"
+                bgColor={bgC}
+                color={tc}
+                border={bc}
+                _hover={{
+                  color: tc1,
+                  bgColor: bgC1,
+                  border: bc1,
+                }}
+                zIndex={700}
+              >
+                Preview <ExternalLinkIcon mx="2px" ml="7px" />
+              </Button>
+            </Link>
           </Flex>
         </Box>
       </Flex>
@@ -145,32 +178,41 @@ const Projects = () => {
             borderTopRadius="10px"
           />
           <Flex justifyContent="space-around" p="10px">
-            <Button
-              bgColor={bgC}
-              color={tc}
-              border={bc}
-              _hover={{
-                color: tc1,
-                bgColor: bgC1,
-                border: bc1,
-              }}
-              zIndex={700}
-            >
-              GitHub
-            </Button>
-            <Button
-              bgColor={bgC}
-              color={tc}
-              border={bc}
-              _hover={{
-                color: tc1,
-                bgColor: bgC1,
-                border: bc1,
-              }}
-              zIndex={700}
-            >
-              Preview
-            </Button>
+            <Link href="" target="_blank" style={{ textDecoration: "none" }}>
+              <Button
+                className="dev"
+                bgColor={bgC}
+                color={tc}
+                border={bc}
+                _hover={{
+                  color: tc1,
+                  bgColor: bgC1,
+                  border: bc1,
+                }}
+                zIndex={700}
+              >
+                GitHub
+              </Button>
+            </Link>
+            <Text color={textC} fontWeight="500" pt="5px">
+              Bath & Body Works
+            </Text>
+            <Link href="" target="_blank" style={{ textDecoration: "none" }}>
+              <Button
+                className="dev"
+                bgColor={bgC}
+                color={tc}
+                border={bc}
+                _hover={{
+                  color: tc1,
+                  bgColor: bgC1,
+                  border: bc1,
+                }}
+                zIndex={700}
+              >
+                Preview <ExternalLinkIcon mx="2px" ml="7px" />
+              </Button>
+            </Link>
           </Flex>
         </Box>
       </Flex>

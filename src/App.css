@@ -2,7 +2,7 @@
   text-align: center;
 }
 .dev{
-  transition: transform 0.6s;
+  transition: transform 0.3s;
 }
 .dev:hover{
   transform: scale(1.1);
