@@ -60,6 +60,8 @@ const Projects = () => {
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
             alt=""
             borderTopRadius="10px"
+            height="260"
+            width="100%"
           />
           <Flex justifyContent="space-around" p="10px">
             <Link
@@ -118,7 +120,8 @@ const Projects = () => {
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/Nordstrom%20rack.png?raw=true"
             alt=""
             borderTopRadius="10px"
-            // height="40vh"
+            height="260"
+            width="100%"
           />
           <Flex justifyContent="space-around" p="10px">
             <Link
@@ -185,6 +188,8 @@ const Projects = () => {
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
             alt=""
             borderTopRadius="10px"
+            height="260"
+            width="100%"
           />
           <Flex justifyContent="space-around" p="10px">
             <Link href="" target="_blank" style={{ textDecoration: "none" }}>
