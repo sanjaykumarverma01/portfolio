@@ -26,6 +26,7 @@ const Home = () => {
     var bc = "2px solid rgb(150, 150, 226)";
     var tc = "#93989E";
     var bgC = "#222e3d";
+    var t = "#93989E"
     
     // hover
     var bc1 = "2px solid #00B9E8";
@@ -38,6 +39,7 @@ const Home = () => {
     var bc = "2px solid white";
     var tc = "white";
     var bgC = "#00B9E8";
+     t = "black"
     // hover
     var bc1 = "2px solid #00B9E8";
     var tc1 = "#00B9E8";
@@ -90,7 +92,7 @@ const Home = () => {
       </Flex>
       <Box mt="5rem">
         <Box>
-          <Heading color={tc}>Get in Touch</Heading>
+          <Heading color={t}>Get in Touch</Heading>
           <Text fontSize="18px" mt=".5rem">
             Whether you want to get in touch, or talk about a project
             collaboration

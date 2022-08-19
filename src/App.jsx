@@ -1,3 +1,4 @@
+import { Box, useColorMode } from "@chakra-ui/react";
 import "./App.css";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -7,15 +8,19 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 
 function App() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  if (colorMode === "light") {
+    var bgc = "gray.200";
+  }
   return (
-    <div className="App">
+    <Box className="App" bgColor={bgc}>
       <Navbar />
       <Home />
       <About />
       <Skills />
       <Projects />
-      <Contact/>
-    </div>
+      <Contact />
+    </Box>
   );
 }
 

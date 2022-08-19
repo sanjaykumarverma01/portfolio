@@ -31,6 +31,7 @@ const Projects = () => {
     tc = "white";
     bgC = "#00B9E8";
     var textC = "#00B9E8";
+    var bgc = "white"
 
     // hover
     bc1 = "2px solid #00B9E8";
@@ -55,6 +56,7 @@ const Projects = () => {
           borderRadius="10px"
           w="45%"
           border={bc}
+          bgColor={bgc}
         >
           <Img
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
@@ -115,6 +117,7 @@ const Projects = () => {
           borderRadius="10px"
           w="45%"
           border={bc}
+          bgColor={bgc}
         >
           <Img
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/Nordstrom%20rack.png?raw=true"
@@ -183,6 +186,8 @@ const Projects = () => {
           borderRadius="10px"
           w="45%"
           border={bc}
+          mb="3rem"
+          bgColor={bgc}
         >
           <Img
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/Hotstar.png?raw=true"

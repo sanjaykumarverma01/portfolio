@@ -16,6 +16,12 @@ const About = () => {
     var bc = "2px solid rgb(150, 150, 226)";
     var tc = "#93989E"
   }
+  if (colorMode === "light") {
+    var bc = "2px solid teal";
+    var tc = "#00B9E8"
+    
+  }
+
   return (
     <Box className="about" pt="6rem">
       <Heading mb="6rem" color={tc}>About Me</Heading>

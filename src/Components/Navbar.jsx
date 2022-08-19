@@ -19,7 +19,7 @@ const Navbar = () => {
     var tc = "#93989E"
   } 
   else{
-    var bgColor = "white";
+    var bgColor = "gray.100";
   }
   return (
     <Box
