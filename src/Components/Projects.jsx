@@ -7,18 +7,20 @@ import {
   useColorMode,
   Link,
   Text,
+  HStack,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import React from "react";
+import { SiCss3, SiHtml5, SiJavascript } from "react-icons/si";
 
 const Projects = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   if (colorMode === "dark") {
     // normal
     var bc = "2px solid rgb(150, 150, 226)";
-    var tc = "#93989E";
+    var tc = "rgb(150, 150, 226)";
     var bgC = "#222e3d";
-    var textC = "#93989E";
+    var textC = "rgb(150, 150, 226)";
 
     // hover
     var bc1 = "2px solid #00B9E8";
@@ -30,8 +32,8 @@ const Projects = () => {
     bc = "2px solid white";
     tc = "white";
     bgC = "#00B9E8";
-    var textC = "#00B9E8";
-    var bgc = "white"
+    textC = "#00B9E8";
+    var bgc = "white";
 
     // hover
     bc1 = "2px solid #00B9E8";
@@ -65,6 +67,9 @@ const Projects = () => {
             height="260"
             width="100%"
           />
+          <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
+            Bath & Body Works Clone
+          </Heading>
           <Flex justifyContent="space-around" p="10px">
             <Link
               href="https://github.com/SK-WebDeveloper/Bath-Body-Works"
@@ -86,9 +91,11 @@ const Projects = () => {
                 GitHub
               </Button>
             </Link>
-            <Text color={textC} fontWeight="500" pt="5px">
-              Bath & Body Works Clone
-            </Text>
+            <HStack>
+              <SiHtml5 fontSize="1.8rem" className="html5"/>
+              <SiCss3 fontSize="1.8rem" className="css3"/>
+              <SiJavascript fontSize="1.8rem" className="js"/>
+            </HStack>
             <Link
               href="https://bathandbodywork.netlify.app/"
               style={{ textDecoration: "none" }}
@@ -126,6 +133,9 @@ const Projects = () => {
             height="260"
             width="100%"
           />
+          <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
+            Nordstrom Rack Clone
+          </Heading>
           <Flex justifyContent="space-around" p="10px">
             <Link
               href="https://github.com/SK-WebDeveloper/Nordstrom-Rack"
@@ -147,9 +157,11 @@ const Projects = () => {
                 GitHub
               </Button>
             </Link>
-            <Text color={textC} fontWeight="500" pt="5px">
-              Nordstrom Rack Clone
-            </Text>
+            <HStack>
+              <SiHtml5 fontSize="1.8rem" className="html5"/>
+              <SiCss3 fontSize="1.8rem" className="css3"/>
+              <SiJavascript fontSize="1.8rem" className="js"/>
+            </HStack>
             <Link
               href="https://nordstrom-rack-shopping.netlify.app/"
               target="_blank"
@@ -196,8 +208,15 @@ const Projects = () => {
             height="260"
             width="100%"
           />
+          <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
+            Disney + Hotstar
+          </Heading>
           <Flex justifyContent="space-around" p="10px">
-            <Link href="https://github.com/SK-WebDeveloper/Disney-Hotstar/tree/main/Hotstar" target="_blank" style={{ textDecoration: "none" }}>
+            <Link
+              href="https://github.com/SK-WebDeveloper/Disney-Hotstar/tree/main/Hotstar"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <Button
                 className="dev"
                 bgColor={bgC}
@@ -213,10 +232,16 @@ const Projects = () => {
                 GitHub
               </Button>
             </Link>
-            <Text color={textC} fontWeight="500" pt="5px">
-              Disney + Hotstar
-            </Text>
-            <Link href="https://disneyhotstar01.netlify.app/" target="_blank" style={{ textDecoration: "none" }}>
+            <HStack>
+              <SiHtml5 fontSize="1.8rem" className="html5"/>
+              <SiCss3 fontSize="1.8rem" className="css3"/>
+              <SiJavascript fontSize="1.8rem" className="js"/>
+            </HStack>
+            <Link
+              href="https://disneyhotstar01.netlify.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <Button
                 className="dev"
                 bgColor={bgC}

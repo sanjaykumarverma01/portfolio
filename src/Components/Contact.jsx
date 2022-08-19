@@ -40,9 +40,9 @@ const Contact = () => {
   if (colorMode === "dark") {
     // normal
     var bc = "2px solid rgb(150, 150, 226)";
-    var tc = "#93989E";
+    var tc = "rgb(150, 150, 226)";
     var bgC = "#222e3d";
-    var textC = "#93989E";
+    var textC = "rgb(150, 150, 226)";
 
     // hover
     var bc1 = "2px solid #00B9E8";
@@ -52,7 +52,7 @@ const Contact = () => {
   if (colorMode === "light") {
     // normal
     bc = "2px solid white";
-    tc = "white";
+
     bgC = "#00B9E8";
     textC = "#00B9E8";
     var bgc = "gray.200";
@@ -115,7 +115,7 @@ const Contact = () => {
         </form>
         <Box mt="3rem">
           <Box>
-            <Text fontSize="18px" fontWeight="500" mt=".5rem">
+            <Text fontSize="18px" fontWeight="500" mt=".5rem" color={tc}>
               You can also connect with me on
             </Text>
           </Box>
@@ -127,15 +127,15 @@ const Contact = () => {
           >
             <Box _hover={{ color: "teal" }}>
               <a href="https://github.com/SK-WebDeveloper" target="_blank">
-                <BsGithub fontSize="40px" />
+                <BsGithub fontSize="40px" className="github"/>
               </a>
             </Box>
-            <Box _hover={{ bgColor: "#0A66C2" }}>
+            <Box >
               <a
                 href="https://www.linkedin.com/in/sanjaykumar-verma-a73349219/"
                 target="_blank"
               >
-                <BsLinkedin fontSize="40px" />
+                <BsLinkedin fontSize="40px" className="linkedin" _hover={{ bgColor: "#0A66C2" }}/>
               </a>
             </Box>
           </Flex>
