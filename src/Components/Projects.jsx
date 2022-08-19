@@ -185,14 +185,14 @@ const Projects = () => {
           border={bc}
         >
           <Img
-            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
+            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/Hotstar.png?raw=true"
             alt=""
             borderTopRadius="10px"
             height="260"
             width="100%"
           />
           <Flex justifyContent="space-around" p="10px">
-            <Link href="" target="_blank" style={{ textDecoration: "none" }}>
+            <Link href="https://github.com/SK-WebDeveloper/Disney-Hotstar/tree/main/Hotstar" target="_blank" style={{ textDecoration: "none" }}>
               <Button
                 className="dev"
                 bgColor={bgC}
@@ -208,8 +208,10 @@ const Projects = () => {
                 GitHub
               </Button>
             </Link>
-            <Text color={textC} fontWeight="500" pt="5px"></Text>
-            <Link href="" target="_blank" style={{ textDecoration: "none" }}>
+            <Text color={textC} fontWeight="500" pt="5px">
+              Disney + Hotstar
+            </Text>
+            <Link href="https://disneyhotstar01.netlify.app/" target="_blank" style={{ textDecoration: "none" }}>
               <Button
                 className="dev"
                 bgColor={bgC}
