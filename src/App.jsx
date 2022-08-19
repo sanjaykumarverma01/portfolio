@@ -10,7 +10,7 @@ import Skills from "./Components/Skills";
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   if (colorMode === "light") {
-    var bgc = "gray.200";
+    var bgc = "gray.100";
   }
   return (
     <Box className="App" bgColor={bgc}>
