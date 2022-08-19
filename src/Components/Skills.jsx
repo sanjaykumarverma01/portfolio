@@ -9,8 +9,8 @@ const Skills = () => {
     var tc2 = "rgb(150, 150, 226)";
   }
   if (colorMode === "light") {
-    var tc = "#00B9E8";
-    var tc2 = "gray"
+    tc = "#00B9E8";
+    tc2 = "gray";
   }
   return (
     <Box className="skills" pt="6rem">
