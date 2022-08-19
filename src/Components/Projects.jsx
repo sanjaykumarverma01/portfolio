@@ -83,7 +83,7 @@ const Projects = () => {
               </Button>
             </Link>
             <Text color={textC} fontWeight="500" pt="5px">
-              Bath & Body Works
+              Bath & Body Works Clone
             </Text>
             <Link
               href="https://bathandbodywork.netlify.app/"
@@ -120,7 +120,11 @@ const Projects = () => {
             borderTopRadius="10px"
           />
           <Flex justifyContent="space-around" p="10px">
-            <Link>
+            <Link
+              href="https://github.com/SK-WebDeveloper/Nordstrom-Rack"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <Button
                 className="dev"
                 bgColor={bgC}
@@ -137,9 +141,13 @@ const Projects = () => {
               </Button>
             </Link>
             <Text color={textC} fontWeight="500" pt="5px">
-              Bath & Body Works
+              Nordstrom Rack Clone
             </Text>
-            <Link href="" target="_blank" style={{ textDecoration: "none" }}>
+            <Link
+              href="https://nordstrom-rack-shopping.netlify.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
               <Button
                 className="dev"
                 bgColor={bgC}
@@ -194,9 +202,7 @@ const Projects = () => {
                 GitHub
               </Button>
             </Link>
-            <Text color={textC} fontWeight="500" pt="5px">
-              Bath & Body Works
-            </Text>
+            <Text color={textC} fontWeight="500" pt="5px"></Text>
             <Link href="" target="_blank" style={{ textDecoration: "none" }}>
               <Button
                 className="dev"
