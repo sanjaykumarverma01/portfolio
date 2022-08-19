@@ -115,9 +115,10 @@ const Projects = () => {
           border={bc}
         >
           <Img
-            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
+            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/Nordstrom%20rack.png?raw=true"
             alt=""
             borderTopRadius="10px"
+            // height="40vh"
           />
           <Flex justifyContent="space-around" p="10px">
             <Link
