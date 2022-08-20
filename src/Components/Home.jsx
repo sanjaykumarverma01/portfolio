@@ -36,14 +36,14 @@ const Home = () => {
   }
   if (colorMode === "light") {
     // normal
-    var bc = "2px solid white";
-    var tc = "white";
-    var bgC = "#00B9E8";
+     bc = "2px solid white";
+     tc = "white";
+     bgC = "#00B9E8";
      t = "black"
     // hover
-    var bc1 = "2px solid #00B9E8";
-    var tc1 = "#00B9E8";
-    var bgC1 = "white";
+     bc1 = "2px solid #00B9E8";
+     tc1 = "#00B9E8";
+     bgC1 = "white";
   }
 
   return (
