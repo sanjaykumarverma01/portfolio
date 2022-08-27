@@ -9,6 +9,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
+import Profile from "../Assets/Profile.png"
 
 const About = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -58,11 +59,11 @@ const About = () => {
             <ListItem>Bike Riding</ListItem>
           </UnorderedList>
         </Box>
-        <Box width="40%" borderRadius="20px" border={bc}>
+        <Box width="35%" borderRadius="50%" h="100%" boxShadow="md">
           <Img
-            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/profile-pic.png?raw=true"
+            src={Profile}
             alt="My"
-            borderRadius="20px"
+            w="100%"
           />
         </Box>
       </Flex>
