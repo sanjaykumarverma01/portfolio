@@ -17,7 +17,7 @@ import {
   SiJavascript,
   SiReact,
   SiChakraui,
-  SiRedux
+  SiRedux,
 } from "react-icons/si";
 
 const Projects = () => {
@@ -68,6 +68,74 @@ const Projects = () => {
           bgColor={bgc}
         >
           <Img
+            src="https://user-images.githubusercontent.com/101388961/187072296-15c5b11d-88d4-4c25-bc83-0b9aab7287a2.png"
+            alt=""
+            borderTopRadius="10px"
+            height="260"
+            width="100%"
+          />
+          <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
+            Hubspot Clone
+          </Heading>
+          <Flex justifyContent="space-around" p="10px">
+            <Link
+              href="https://github.com/sanjaykumarverma01/hubspot"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <Button
+                className="dev"
+                bgColor={bgC}
+                color={tc}
+                border={bc}
+                _hover={{
+                  color: tc1,
+                  bgColor: bgC1,
+                  border: bc1,
+                }}
+                zIndex={700}
+              >
+                GitHub
+              </Button>
+            </Link>
+            <HStack>
+              <SiReact fontSize="1.8rem" className="common react" />
+              <SiChakraui fontSize="1.8rem" className="common chakra" />
+              <SiRedux fontSize="1.8rem" className="common redux" />
+              <SiCss3 fontSize="1.8rem" className="common css3" />
+              <SiJavascript fontSize="1.8rem" className="common js" />
+            </HStack>
+            <Link
+              href="https://disneyhotstar01.netlify.app/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <Button
+                className="dev"
+                bgColor={bgC}
+                color={tc}
+                border={bc}
+                _hover={{
+                  color: tc1,
+                  bgColor: bgC1,
+                  border: bc1,
+                }}
+                zIndex={700}
+              >
+                Preview <ExternalLinkIcon mx="2px" ml="7px" />
+              </Button>
+            </Link>
+          </Flex>
+        </Box>
+        <Box
+          boxShadow="md"
+          borderWidth="1px"
+          borderRadius="10px"
+          w="45%"
+          border={bc}
+          bgColor={bgc}
+        >
+          <Img
             src="https://github.com/sanjaykumarverma01/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
             alt=""
             borderTopRadius="10px"
@@ -107,74 +175,6 @@ const Projects = () => {
               href="https://bathandbodywork.netlify.app/"
               style={{ textDecoration: "none" }}
               target="_blank"
-            >
-              <Button
-                className="dev"
-                bgColor={bgC}
-                color={tc}
-                border={bc}
-                _hover={{
-                  color: tc1,
-                  bgColor: bgC1,
-                  border: bc1,
-                }}
-                zIndex={700}
-              >
-                Preview <ExternalLinkIcon mx="2px" ml="7px" />
-              </Button>
-            </Link>
-          </Flex>
-        </Box>
-        <Box
-          boxShadow="md"
-          borderWidth="1px"
-          borderRadius="10px"
-          w="45%"
-          border={bc}
-          bgColor={bgc}
-        >
-          <Img
-            src="https://user-images.githubusercontent.com/101388961/187072296-15c5b11d-88d4-4c25-bc83-0b9aab7287a2.png"
-            alt=""
-            borderTopRadius="10px"
-            height="260"
-            width="100%"
-          />
-          <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
-            Hubspot Clone
-          </Heading>
-          <Flex justifyContent="space-around" p="10px">
-            <Link
-              href="https://github.com/sanjaykumarverma01/hubspot"
-              target="_blank"
-              style={{ textDecoration: "none" }}
-            >
-              <Button
-                className="dev"
-                bgColor={bgC}
-                color={tc}
-                border={bc}
-                _hover={{
-                  color: tc1,
-                  bgColor: bgC1,
-                  border: bc1,
-                }}
-                zIndex={700}
-              >
-                GitHub
-              </Button>
-            </Link>
-            <HStack>
-              <SiReact fontSize="1.8rem" className="common react" />
-              <SiChakraui fontSize="1.8rem" className="common chakra" />
-              <SiRedux fontSize="1.8rem" className="common redux"/>
-              <SiCss3 fontSize="1.8rem" className="common css3" />
-              <SiJavascript fontSize="1.8rem" className="common js" />
-            </HStack>
-            <Link
-              href="https://disneyhotstar01.netlify.app/"
-              target="_blank"
-              style={{ textDecoration: "none" }}
             >
               <Button
                 className="dev"
