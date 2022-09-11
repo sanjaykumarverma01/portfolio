@@ -7,27 +7,34 @@
 .dev:hover {
   transform: scale(1.1);
 }
-.html5 {
+.common{
   color: #00b9e8;
 }
 .html5:hover {
   cursor: pointer;
   color: #e44d26;
 }
-.css3 {
-  color: #00b9e8;
-}
 .css3:hover {
   cursor: pointer;
   color: #264de4;
-}
-.js {
-  color: #00b9e8;
 }
 .js:hover {
   cursor: pointer;
   color: #f7df1e;
 }
+.react:hover{
+  cursor: pointer;
+  color: #53C1DE;
+}
+.redux:hover{
+  cursor: pointer;
+  color: #764ABC;
+}
+.chakra:hover{
+  cursor: pointer;
+  color: #59C9C8;
+}
+
 .linkedin:hover {
   color: #0a66c2;
   background-color: white;

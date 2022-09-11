@@ -11,7 +11,14 @@ import {
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import React from "react";
-import { SiCss3, SiHtml5, SiJavascript } from "react-icons/si";
+import {
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+  SiChakraui,
+  SiRedux
+} from "react-icons/si";
 
 const Projects = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -61,7 +68,7 @@ const Projects = () => {
           bgColor={bgc}
         >
           <Img
-            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
+            src="https://github.com/sanjaykumarverma01/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
             alt=""
             borderTopRadius="10px"
             height="260"
@@ -72,7 +79,7 @@ const Projects = () => {
           </Heading>
           <Flex justifyContent="space-around" p="10px">
             <Link
-              href="https://github.com/SK-WebDeveloper/Bath-Body-Works"
+              href="https://github.com/sanjaykumarverma01/Bath-Body-Works"
               target="_blank"
               style={{ textDecoration: "none" }}
             >
@@ -92,9 +99,9 @@ const Projects = () => {
               </Button>
             </Link>
             <HStack>
-              <SiHtml5 fontSize="1.8rem" className="html5"/>
-              <SiCss3 fontSize="1.8rem" className="css3"/>
-              <SiJavascript fontSize="1.8rem" className="js"/>
+              <SiHtml5 fontSize="1.8rem" className="common html5" />
+              <SiCss3 fontSize="1.8rem" className="common css3" />
+              <SiJavascript fontSize="1.8rem" className="common js" />
             </HStack>
             <Link
               href="https://bathandbodywork.netlify.app/"
@@ -127,18 +134,18 @@ const Projects = () => {
           bgColor={bgc}
         >
           <Img
-            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/Nordstrom%20rack.png?raw=true"
+            src="https://user-images.githubusercontent.com/101388961/187072296-15c5b11d-88d4-4c25-bc83-0b9aab7287a2.png"
             alt=""
             borderTopRadius="10px"
             height="260"
             width="100%"
           />
           <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
-            Nordstrom Rack Clone
+            Hubspot Clone
           </Heading>
           <Flex justifyContent="space-around" p="10px">
             <Link
-              href="https://github.com/SK-WebDeveloper/Nordstrom-Rack"
+              href="https://github.com/sanjaykumarverma01/hubspot"
               target="_blank"
               style={{ textDecoration: "none" }}
             >
@@ -158,12 +165,14 @@ const Projects = () => {
               </Button>
             </Link>
             <HStack>
-              <SiHtml5 fontSize="1.8rem" className="html5"/>
-              <SiCss3 fontSize="1.8rem" className="css3"/>
-              <SiJavascript fontSize="1.8rem" className="js"/>
+              <SiReact fontSize="1.8rem" className="common react" />
+              <SiChakraui fontSize="1.8rem" className="common chakra" />
+              <SiRedux fontSize="1.8rem" className="common redux"/>
+              <SiCss3 fontSize="1.8rem" className="common css3" />
+              <SiJavascript fontSize="1.8rem" className="common js" />
             </HStack>
             <Link
-              href="https://nordstrom-rack-shopping.netlify.app/"
+              href="https://disneyhotstar01.netlify.app/"
               target="_blank"
               style={{ textDecoration: "none" }}
             >
@@ -202,18 +211,18 @@ const Projects = () => {
           bgColor={bgc}
         >
           <Img
-            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/project%20img/Hotstar.png?raw=true"
+            src="https://github.com/sanjaykumarverma01/portfolio/blob/main/src/project%20img/Nordstrom%20rack.png?raw=true"
             alt=""
             borderTopRadius="10px"
             height="260"
             width="100%"
           />
           <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
-            Disney + Hotstar
+            Nordstrom Rack Clone
           </Heading>
           <Flex justifyContent="space-around" p="10px">
             <Link
-              href="https://github.com/SK-WebDeveloper/Disney-Hotstar/tree/main/Hotstar"
+              href="https://github.com/sanjaykumarverma01/Nordstrom-Rack"
               target="_blank"
               style={{ textDecoration: "none" }}
             >
@@ -233,12 +242,12 @@ const Projects = () => {
               </Button>
             </Link>
             <HStack>
-              <SiHtml5 fontSize="1.8rem" className="html5"/>
-              <SiCss3 fontSize="1.8rem" className="css3"/>
-              <SiJavascript fontSize="1.8rem" className="js"/>
+              <SiHtml5 fontSize="1.8rem" className="common html5" />
+              <SiCss3 fontSize="1.8rem" className="common css3" />
+              <SiJavascript fontSize="1.8rem" className="common js" />
             </HStack>
             <Link
-              href="https://disneyhotstar01.netlify.app/"
+              href="https://nordstrom-rack-shopping.netlify.app/"
               target="_blank"
               style={{ textDecoration: "none" }}
             >
