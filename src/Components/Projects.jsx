@@ -106,7 +106,7 @@ const Projects = () => {
               <SiJavascript fontSize="1.8rem" className="common js" />
             </HStack>
             <Link
-              href="https://disneyhotstar01.netlify.app/"
+              href="https://clone-hubspot.netlify.app"
               target="_blank"
               style={{ textDecoration: "none" }}
             >
