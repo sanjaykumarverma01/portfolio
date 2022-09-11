@@ -13,6 +13,9 @@ import {
   SiHeroku,
   SiCypress,
   SiJest,
+  SiExpress,
+  SiMongodb,
+  SiNodedotjs,
 } from "react-icons/si";
 
 const SkillCard = ({}) => {
@@ -122,6 +125,7 @@ const SkillCard = ({}) => {
         w="80%"
         justifyContent="space-around"
         color="#00B9E8"
+        mb="50px"
       >
         <Box
           _hover={{ color: "#DE4C36" }}
@@ -204,6 +208,50 @@ const SkillCard = ({}) => {
         >
           <SiJest className="dev" fontSize="4rem" />
           <Text mt="15px">Jest</Text>
+        </Box>
+      </Flex>
+      <Flex
+        m="auto"
+        textAlign="center"
+        w="80%"
+        justifyContent="space-around"
+        color="#00B9E8"
+      >
+         <Box
+          _hover={{ color: "#83CD29" }}
+          boxShadow="base"
+          p="6"
+          rounded="md"
+          bg={bgColor}
+          border={bc}
+          className="dev"
+        >
+          <SiNodedotjs className="dev" fontSize="4rem" />
+          <Text mt="15px">NodeJS</Text>
+        </Box>
+        <Box
+          _hover={{ color: "#F10301" }}
+          boxShadow="base"
+          p="6"
+          rounded="md"
+          bg={bgColor}
+          border={bc}
+          className="dev"
+        >
+          <SiExpress className="dev" fontSize="4rem" />
+          <Text mt="15px">Express</Text>
+        </Box>
+        <Box
+          _hover={{ color: "#00ED64" }}
+          boxShadow="base"
+          p="6"
+          rounded="md"
+          bg={bgColor}
+          border={bc}
+          className="dev"
+        >
+          <SiMongodb className="dev" fontSize="4rem" />
+          <Text mt="15px">MongoDB</Text>
         </Box>
       </Flex>
     </Box>
