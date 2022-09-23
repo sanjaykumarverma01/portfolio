@@ -103,7 +103,6 @@ const Projects = () => {
               <SiChakraui fontSize="1.8rem" className="common chakra" />
               <SiRedux fontSize="1.8rem" className="common redux" />
               <SiCss3 fontSize="1.8rem" className="common css3" />
-              <SiJavascript fontSize="1.8rem" className="common js" />
             </HStack>
             <Link
               href="https://clone-hubspot.netlify.app"
