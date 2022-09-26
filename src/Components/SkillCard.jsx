@@ -16,6 +16,10 @@ import {
   SiExpress,
   SiMongodb,
   SiNodedotjs,
+  SiBabel,
+  SiReactrouter,
+  SiNetlify,
+  SiTypescript
 } from "react-icons/si";
 
 const SkillCard = ({}) => {
@@ -95,6 +99,51 @@ const SkillCard = ({}) => {
           <Text mt="15px">Redux</Text>
         </Box>
         <Box
+          _hover={{ color: "#83CD29" }}
+          boxShadow="base"
+          p="6"
+          rounded="md"
+          bg={bgColor}
+          border={bc}
+          className="dev"
+        >
+          <SiNodedotjs className="dev" fontSize="4rem" />
+          <Text mt="15px">NodeJS</Text>
+        </Box>
+        <Box
+          _hover={{ color: "#F10301" }}
+          boxShadow="base"
+          p="6"
+          rounded="md"
+          bg={bgColor}
+          border={bc}
+          className="dev"
+        >
+          <SiExpress className="dev" fontSize="4rem" />
+          <Text mt="15px">Express</Text>
+        </Box>
+        <Box
+          _hover={{ color: "#00ED64" }}
+          boxShadow="base"
+          p="6"
+          rounded="md"
+          bg={bgColor}
+          border={bc}
+          className="dev"
+        >
+          <SiMongodb className="dev" fontSize="4rem" />
+          <Text mt="15px">MongoDB</Text>
+        </Box>
+      </Flex>
+      <Flex
+        m="auto"
+        textAlign="center"
+        w="80%"
+        justifyContent="space-around"
+        color="#00B9E8"
+        mb="50px"
+      >
+        <Box
           _hover={{ color: "#59C9C8" }}
           boxShadow="base"
           p="6"
@@ -118,15 +167,6 @@ const SkillCard = ({}) => {
           <SiBootstrap className="dev" fontSize="4rem" />
           <Text mt="15px">Bootstrap</Text>
         </Box>
-      </Flex>
-      <Flex
-        m="auto"
-        textAlign="center"
-        w="80%"
-        justifyContent="space-around"
-        color="#00B9E8"
-        mb="50px"
-      >
         <Box
           _hover={{ color: "#DE4C36" }}
           boxShadow="base"
@@ -217,8 +257,8 @@ const SkillCard = ({}) => {
         justifyContent="space-around"
         color="#00B9E8"
       >
-         <Box
-          _hover={{ color: "#83CD29" }}
+        <Box
+          _hover={{ color: "gold" }}
           boxShadow="base"
           p="6"
           rounded="md"
@@ -226,11 +266,11 @@ const SkillCard = ({}) => {
           border={bc}
           className="dev"
         >
-          <SiNodedotjs className="dev" fontSize="4rem" />
-          <Text mt="15px">NodeJS</Text>
+          <SiBabel className="dev" fontSize="4rem" />
+          <Text mt="15px">Babel</Text>
         </Box>
         <Box
-          _hover={{ color: "#F10301" }}
+          _hover={{ color: "darkred" }}
           boxShadow="base"
           p="6"
           rounded="md"
@@ -238,11 +278,11 @@ const SkillCard = ({}) => {
           border={bc}
           className="dev"
         >
-          <SiExpress className="dev" fontSize="4rem" />
-          <Text mt="15px">Express</Text>
+          <SiReactrouter className="dev" fontSize="4rem" />
+          <Text mt="15px">React Router</Text>
         </Box>
         <Box
-          _hover={{ color: "#00ED64" }}
+          _hover={{ color: "#4C9ABE" }}
           boxShadow="base"
           p="6"
           rounded="md"
@@ -250,8 +290,20 @@ const SkillCard = ({}) => {
           border={bc}
           className="dev"
         >
-          <SiMongodb className="dev" fontSize="4rem" />
-          <Text mt="15px">MongoDB</Text>
+          <SiNetlify className="dev" fontSize="4rem" />
+          <Text mt="15px">Netlify</Text>
+        </Box>
+        <Box
+          _hover={{ color: "#017ACD" }}
+          boxShadow="base"
+          p="6"
+          rounded="md"
+          bg={bgColor}
+          border={bc}
+          className="dev"
+        >
+          <SiTypescript className="dev" fontSize="4rem" />
+          <Text mt="15px">Typescript</Text>
         </Box>
       </Flex>
     </Box>

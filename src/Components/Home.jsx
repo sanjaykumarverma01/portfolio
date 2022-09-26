@@ -8,7 +8,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
-import { HiDownload } from "react-icons/hi";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { saveAs } from "file-saver";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
@@ -26,24 +26,23 @@ const Home = () => {
     var bc = "2px solid rgb(150, 150, 226)";
     var tc = "#93989E";
     var bgC = "#222e3d";
-    var t = "#93989E"
-    
+    var t = "#93989E";
+
     // hover
     var bc1 = "2px solid #00B9E8";
     var tc1 = "#00B9E8";
     var bgC1 = "#222e3d";
-    
   }
   if (colorMode === "light") {
     // normal
-     bc = "2px solid white";
-     tc = "white";
-     bgC = "#00B9E8";
-     t = "black"
+    bc = "2px solid white";
+    tc = "white";
+    bgC = "#00B9E8";
+    t = "black";
     // hover
-     bc1 = "2px solid #00B9E8";
-     tc1 = "#00B9E8";
-     bgC1 = "white";
+    bc1 = "2px solid #00B9E8";
+    tc1 = "#00B9E8";
+    bgC1 = "white";
   }
 
   return (
@@ -63,22 +62,23 @@ const Home = () => {
             I am passionate about creating awesome user experience using the
             latest front-end and back-end technologies.
           </Text>
-          <Button
-            onClick={handleDownload}
-            mt="1rem"
-            bgColor={bgC}
-            color={tc}
-            border={bc}
-            _hover={{
-              color: tc1,
-              bgColor: bgC1,
-              border: bc1,
-            }}
-            zIndex={700}
-          >
-            <HiDownload />
-            RESUME
-          </Button>
+          <Box textAlign="left">
+            <Button
+              onClick={handleDownload}
+              mt="1rem"
+              bgColor={bgC}
+              color={tc}
+              border={bc}
+              _hover={{
+                color: tc1,
+                bgColor: bgC1,
+                border: bc1,
+              }}
+              zIndex={700}
+            >
+              RESUME <ExternalLinkIcon ml="10px"/>
+            </Button>
+          </Box>
         </Box>
         <Box w="40%">
           <Img

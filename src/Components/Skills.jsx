@@ -5,21 +5,18 @@ import SkillCard from "./SkillCard";
 const Skills = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   if (colorMode === "dark") {
-    var tc = "#93989E";
-    var tc2 = "rgb(150, 150, 226)";
+    var tc = "rgb(150, 150, 226)";
+    var tc2 = "#00B9E8";
   }
   if (colorMode === "light") {
     tc = "#00B9E8";
-    tc2 = "gray";
+    tc2 = "rgb(150, 150, 226)";
   }
   return (
     <Box className="skills" pt="6rem">
       <Heading mb="5rem" color={tc}>
-        Skills
+        Tech Stack <span style={{color:tc2}}>&</span> Tools
       </Heading>
-      <Text fontSize="3xl" mb="3rem" color={tc2}>
-        Developement Tools
-      </Text>
       <SkillCard />
     </Box>
   );
