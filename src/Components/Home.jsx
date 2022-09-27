@@ -46,9 +46,21 @@ const Home = () => {
   }
 
   return (
-    <Box className="main" pt="70px">
-      <Flex justifyContent="space-around" mt="2rem">
-        <Box w="40%">
+    <Box
+      className="main"
+      pt={["0px", "0px", "60px", "70px"]}
+      size={["xs", "sm", "md", "lg"]}
+    >
+      <Flex
+        justifyContent="space-around"
+        mt={[".5rem", "1rem", "1.5rem", "2rem"]}
+        direction={["column", "column", "row"]}
+        alignItems={["center", "center"]}
+      >
+        <Box
+          w={["80%", "80%", "40%", "40%"]}
+          display={["none", "none", "block", "block"]}
+        >
           <Text fontSize="5xl" fontWeight="400" textAlign="justify">
             Hi There! 👋🏻
           </Text>
@@ -76,35 +88,88 @@ const Home = () => {
               }}
               zIndex={700}
             >
-              RESUME <ExternalLinkIcon ml="10px"/>
+              RESUME <ExternalLinkIcon ml="10px" />
             </Button>
           </Box>
         </Box>
-        <Box w="40%">
+        <Box w={["90%", "90%", "40%", "40%"]}>
           <Img
             w="100%"
-            h="350px"
+            h={["200px", "250px", "300px", "350px"]}
             src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/home.gif?raw=true"
             alt="Home Page"
             borderRadius="3px"
           />
         </Box>
+        <Box
+          w={["80%", "80%", "40%", "40%"]}
+          display={["block", "block", "none", "none"]}
+          mt={["10px", "20px", "none", "none"]}
+        >
+          <Text
+            fontSize={["2xl", "3xl", "4xl", "5xl"]}
+            fontWeight={["200", "300", "400", "400"]}
+            textAlign="justify"
+          >
+            Hi There! 👋🏻
+          </Text>
+          <Text
+            fontSize={["2xl", "3xl", "4xl", "5xl"]}
+            fontWeight={["400", "400", "500", "500"]}
+            textAlign="justify"
+          >
+            🙏🏻 <span style={{ color: "#00B9E8" }}>Sanjaykumar Verma 🙏🏻 </span>
+          </Text>
+          <Text fontSize={["md", "lg", "xl", "2xl"]} textAlign="justify">
+            I am passionate about creating awesome user experiences using the
+            latest front-end and back-end technologies. Able to work under
+            pressure, a passionate problem solver, and a quick learner.
+          </Text>
+          <Box textAlign="left">
+            <Button
+              onClick={handleDownload}
+              mt="1rem"
+              borderRadius={["50", "40", "30", "20"]}
+              bgColor={bgC}
+              color={tc}
+              border={bc}
+              _hover={{
+                color: tc1,
+                bgColor: bgC1,
+                border: bc1,
+              }}
+              zIndex={700}
+            >
+              RESUME <ExternalLinkIcon ml="10px" />
+            </Button>
+          </Box>
+        </Box>
       </Flex>
-      <Box mt="5rem">
+      <Box mt={["2rem", "3rem", "4rem", "5rem"]}>
         <Box>
           <Heading color={t}>Get in Touch</Heading>
-          <Text fontSize="18px" mt=".5rem">
+          <Text fontSize={["15px","16px","17px","18px"]} mt=".5rem">
             Whether you want to get in touch, or talk about a project
             collaboration
           </Text>
-          <Text fontSize="18px" fontWeight="500" mt=".5rem">
+          <Text fontSize="18px" fontWeight={["400","500"]} mt=".5rem">
             Feel free to contact me
           </Text>
         </Box>
-        <Flex width="10%" margin="auto" justifyContent="space-evenly" mt="1rem">
+        <Flex
+          width={["15%","15%","10%","10%"]}
+          margin="auto"
+          justifyContent={[
+            "space-between",
+            "space-between",
+            "space-evenly",
+            "space-evenly",
+          ]}
+          mt="1rem"
+        >
           <Box _hover={{ color: "teal" }}>
             <a href="https://github.com/SK-WebDeveloper" target="_blank">
-              <BsGithub fontSize="40px" />
+              <BsGithub fontSize={["20px", "30px", "40px", "40px"]} />
             </a>
           </Box>
           <Box _hover={{ bgColor: "#0A66C2" }}>
@@ -112,7 +177,7 @@ const Home = () => {
               href="https://www.linkedin.com/in/sanjaykumar-verma-a73349219/"
               target="_blank"
             >
-              <BsLinkedin fontSize="40px" />
+              <BsLinkedin fontSize={["20px", "30px", "40px", "40px"]} />
             </a>
           </Box>
         </Flex>

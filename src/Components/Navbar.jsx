@@ -59,9 +59,8 @@ const Navbar = () => {
           direction={["column", "column", "row"]}
           gap={["3", "6", "8", "10"]}
           size={["xs", "sm", "md", "lg"]}
-          display={["none", "none", "flex", "Flex"]}
         >
-          <Box size={["xs", "sm", "md", "lg"]}>
+          <Box size={["xs", "sm", "md", "lg"]} display={["none","none","block","block"]}>
             <Link
               to="main"
               smooth={true}
@@ -90,7 +89,7 @@ const Navbar = () => {
               </Text>
             </Link>
           </Box>
-          <Box size={["xs", "sm", "md", "lg"]}>
+          <Box size={["xs", "sm", "md", "lg"]} display={["none","none","block","block"]}>
             <Link
               to="about"
               smooth={true}
@@ -119,7 +118,7 @@ const Navbar = () => {
               </Text>
             </Link>
           </Box>
-          <Box size={["xs", "sm", "md", "lg"]}>
+          <Box size={["xs", "sm", "md", "lg"]} display={["none","none","block","block"]}>
             <Link
               to="skills"
               smooth={true}
@@ -148,7 +147,7 @@ const Navbar = () => {
               </Text>
             </Link>
           </Box>
-          <Box size={["xs", "sm", "md", "lg"]}>
+          <Box size={["xs", "sm", "md", "lg"]} display={["none","none","block","block"]}>
             <Link
               to="projects"
               smooth={true}
@@ -177,7 +176,7 @@ const Navbar = () => {
               </Text>
             </Link>
           </Box>
-          <Box size={["xs", "sm", "md", "lg"]}>
+          <Box size={["xs", "sm", "md", "lg"]} display={["none","none","block","block"]}>
             <Link
               to="contact"
               smooth={true}
