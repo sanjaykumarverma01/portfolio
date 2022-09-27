@@ -4,7 +4,6 @@ import {
   Button,
   Flex,
   HStack,
-  Stack,
   Img,
   Text,
   useColorMode,
