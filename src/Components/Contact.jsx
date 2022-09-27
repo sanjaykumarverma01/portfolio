@@ -64,7 +64,7 @@ const Contact = () => {
   }
 
   return (
-    <Box className="contact" pt="6rem" height="100vh" bgColor={bgc}>
+    <Box className="contact" pt={["3rem","4rem","5rem","6rem"]} height="100vh" bgColor={bgc}>
       <Heading mb="3rem" color={textC}>
         Contact Me!
       </Heading>
@@ -108,25 +108,26 @@ const Contact = () => {
                 bgColor: bgC1,
                 color: tc1,
               }}
+              borderRadius={["50","40","30","20"]}
             >
               Send
             </Button>
           </VStack>
         </form>
-        <Box mt="3rem">
+        <Box mt={["1rem","2rem","3rem"]}>
           <Box>
-            <Text fontSize="18px" fontWeight="500" mt=".5rem" color={tc}>
+            <Text fontSize={["15px","16px","17px","18px"]} fontWeight="500" mt=".5rem" color={tc}>
               You can also connect with me on
             </Text>
           </Box>
           <Flex
-            width="60%"
+            width={["100%","80%","60%"]}
             margin="auto"
             justifyContent="space-evenly"
             mt="1rem"
           >
             <Box _hover={{ color: "teal" }}>
-              <a href="https://github.com/SK-WebDeveloper" target="_blank">
+              <a href="https://github.com/sanjaykumarverma01" target="_blank">
                 <BsGithub fontSize="40px" className="github"/>
               </a>
             </Box>
