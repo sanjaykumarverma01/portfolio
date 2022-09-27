@@ -6,6 +6,7 @@ import {
   Img,
   useColorMode,
   Link,
+  Stack,
   Text,
   HStack,
 } from "@chakra-ui/react";
@@ -48,24 +49,26 @@ const Projects = () => {
     bgC1 = "white";
   }
   return (
-    <Box className="projects" pt="6rem">
-      <Heading mb="5rem" color={textC}>
+    <Box className="projects" pt={["2rem","3rem","5rem","6rem"]}>
+      <Heading mb={["2rem","3rem","4rem","5rem"]} color={textC}>
         Projects
       </Heading>
       <Flex
         m="auto"
         textAlign="center"
-        w="80%"
+        w={["95%","90%","80%"]}
         justifyContent="space-around"
-        mb="50px"
+        mb={["0","0","0","50px"]}
+        direction={["column","column","row"]}
       >
         <Box
           boxShadow="md"
           borderWidth="1px"
           borderRadius="10px"
-          w="45%"
+          w={["100%","100%","45%"]}
           border={bc}
           bgColor={bgc}
+          mb={["50px","50px","0"]}
         >
           <Img
             src="https://user-images.githubusercontent.com/101388961/187072296-15c5b11d-88d4-4c25-bc83-0b9aab7287a2.png"
@@ -77,7 +80,7 @@ const Projects = () => {
           <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
             Hubspot Clone
           </Heading>
-          <Flex justifyContent="space-around" p="10px">
+          <Flex justifyContent="space-around" p="10px" direction={["column","column","row"]}>
             <Link
               href="https://github.com/sanjaykumarverma01/hubspot"
               target="_blank"
@@ -94,11 +97,12 @@ const Projects = () => {
                   border: bc1,
                 }}
                 zIndex={700}
+                borderRadius={["50","40","30","10"]}
               >
                 GitHub
               </Button>
             </Link>
-            <HStack>
+            <HStack margin={["auto","auto","0"]} p={["10px 0","10px 0","10px 0","0"]}>
               <SiReact fontSize="1.8rem" className="common react" />
               <SiChakraui fontSize="1.8rem" className="common chakra" />
               <SiRedux fontSize="1.8rem" className="common redux" />
@@ -120,6 +124,7 @@ const Projects = () => {
                   border: bc1,
                 }}
                 zIndex={700}
+                borderRadius={["50","40","30","10"]}
               >
                 Preview <ExternalLinkIcon mx="2px" ml="7px" />
               </Button>
@@ -130,9 +135,10 @@ const Projects = () => {
           boxShadow="md"
           borderWidth="1px"
           borderRadius="10px"
-          w="45%"
+          w={["100%","100%","45%"]}
           border={bc}
           bgColor={bgc}
+          mb={["50px","50px","0"]}
         >
           <Img
             src="https://github.com/sanjaykumarverma01/portfolio/blob/main/src/project%20img/BathandBody.png?raw=true"
@@ -144,7 +150,7 @@ const Projects = () => {
           <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
             Bath & Body Works Clone
           </Heading>
-          <Flex justifyContent="space-around" p="10px">
+          <Flex justifyContent="space-around" p="10px" direction={["column","column","row"]}>
             <Link
               href="https://github.com/sanjaykumarverma01/Bath-Body-Works"
               target="_blank"
@@ -161,11 +167,12 @@ const Projects = () => {
                   border: bc1,
                 }}
                 zIndex={700}
+                borderRadius={["50","40","30","10"]}
               >
                 GitHub
               </Button>
             </Link>
-            <HStack>
+            <HStack margin={["auto","auto","0"]} p={["10px 0","10px 0","10px 0","0"]}>
               <SiHtml5 fontSize="1.8rem" className="common html5" />
               <SiCss3 fontSize="1.8rem" className="common css3" />
               <SiJavascript fontSize="1.8rem" className="common js" />
@@ -186,6 +193,7 @@ const Projects = () => {
                   border: bc1,
                 }}
                 zIndex={700}
+                borderRadius={["50","40","30","10"]}
               >
                 Preview <ExternalLinkIcon mx="2px" ml="7px" />
               </Button>
@@ -196,7 +204,7 @@ const Projects = () => {
       <Flex
         m="auto"
         textAlign="center"
-        w="80%"
+        w={["95%","90%","80%"]}
         justifyContent="space-around"
         gap={10}
       >
@@ -204,7 +212,7 @@ const Projects = () => {
           boxShadow="md"
           borderWidth="1px"
           borderRadius="10px"
-          w="45%"
+          w={["100%","100%","45%"]}
           border={bc}
           mb="3rem"
           bgColor={bgc}
@@ -219,7 +227,7 @@ const Projects = () => {
           <Heading color={textC} fontWeight="400" pt="5px" fontSize="xl">
             Nordstrom Rack Clone
           </Heading>
-          <Flex justifyContent="space-around" p="10px">
+          <Flex justifyContent="space-around" p="10px" direction={["column","column","row"]}>
             <Link
               href="https://github.com/sanjaykumarverma01/Nordstrom-Rack"
               target="_blank"
@@ -236,11 +244,12 @@ const Projects = () => {
                   border: bc1,
                 }}
                 zIndex={700}
+                borderRadius={["50","40","30","10"]}
               >
                 GitHub
               </Button>
             </Link>
-            <HStack>
+            <HStack margin={["auto","auto","0"]} p={["10px 0","10px 0","10px 0","0"]}>
               <SiHtml5 fontSize="1.8rem" className="common html5" />
               <SiCss3 fontSize="1.8rem" className="common css3" />
               <SiJavascript fontSize="1.8rem" className="common js" />
@@ -251,6 +260,7 @@ const Projects = () => {
               style={{ textDecoration: "none" }}
             >
               <Button
+              borderRadius={["50","40","30","10"]}
                 className="dev"
                 bgColor={bgC}
                 color={tc}
