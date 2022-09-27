@@ -4,11 +4,11 @@ import {
   Button,
   Flex,
   HStack,
+  Stack,
   Img,
   Text,
   useColorMode,
 } from "@chakra-ui/react";
-import { Switch } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { BsFillMoonFill, BsSun } from "react-icons/bs";
 
@@ -16,9 +16,8 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   if (colorMode === "dark") {
     var bgColor = "#222e3d";
-    var tc = "#93989E"
-  } 
-  else{
+    var tc = "#93989E";
+  } else {
     var bgColor = "gray.100";
   }
   return (
@@ -29,6 +28,7 @@ const Navbar = () => {
       bgColor={bgColor}
       className="navbar"
       zIndex={1000}
+      size={["xs", "sm", "md", "lg"]}
     >
       <Flex
         justifyContent="space-between"
@@ -36,26 +36,47 @@ const Navbar = () => {
         alignContent="center"
         margin="auto"
         color={tc}
+        // direction={["column", "column", "row"]}
+        size={["xs", "sm", "md", "lg"]}
       >
-        <Box _hover={{ cursor: "pointer" }}>
-          <Link
-            to="main"
-            smooth={true}
-            duration={1000}
-            activeClass="active"
-            spy={true}
-            hashSpy={true}
-          >
-            <Img
-              src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/logo%20png.png?raw=true"
-              alt="logo"
-              width="20"
-              height="20"
-            />
-          </Link>
-        </Box>
-        <HStack gap={10}>
-          <Box>
+        <Flex alignItems="center" size={["xs", "sm", "md", "lg"]}>
+          <Img
+            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/logo%20png.png?raw=true"
+            alt="logo"
+            width={[5, 10, 15, 20]}
+            height={[5, 10, 15, 20]}
+          />
+        </Flex>
+        <HStack
+          direction={["column", "column", "row"]}
+          gap={["3", "6", "8", "10"]}
+          size={["xs", "sm", "md", "lg"]}
+        >
+          <Box size={["xs", "sm", "md", "lg"]}>
+            <Link
+              to="main"
+              smooth={true}
+              duration={1000}
+              activeClass="active"
+              spy={true}
+              hashSpy={true}
+            >
+              <Text
+                fontSize={["xs", "sm", "md", "xl"]}
+                fontWeight={["400", "500", "600"]}
+                _hover={{
+                  color: "#00B9E8",
+                  borderBottom: "5px solid",
+                  borderColor: "#00B9E8",
+                  cursor: "pointer",
+                  borderRadius: "5px",
+                }}
+              >
+                Home
+              </Text>
+            </Link>
+          </Box>
+          <Box size={["xs", "sm", "md", "lg"]}>
             <Link
               to="about"
               smooth={true}
@@ -65,11 +86,16 @@ const Navbar = () => {
               hashSpy={true}
             >
               <Text
-                fontSize="xl"
-                fontWeight="600"
+                fontSize={["xs", "sm", "md", "xl"]}
+                fontWeight={["400", "500", "600"]}
                 _hover={{
                   color: "#00B9E8",
-                  borderBottom: "5px solid",
+                  borderBottom: [
+                    "2px solid",
+                    "3px solid",
+                    "4px solid",
+                    "5px solid",
+                  ],
                   borderColor: "#00B9E8",
                   cursor: "pointer",
                   borderRadius: "5px",
@@ -79,7 +105,7 @@ const Navbar = () => {
               </Text>
             </Link>
           </Box>
-          <Box>
+          <Box size={["xs", "sm", "md", "lg"]}>
             <Link
               to="skills"
               smooth={true}
@@ -89,11 +115,16 @@ const Navbar = () => {
               hashSpy={true}
             >
               <Text
-                fontSize="xl"
-                fontWeight="600"
+                fontSize={["xs", "sm", "md", "xl"]}
+                fontWeight={["400", "500", "600"]}
                 _hover={{
                   color: "#00B9E8",
-                  borderBottom: "5px solid",
+                  borderBottom: [
+                    "2px solid",
+                    "3px solid",
+                    "4px solid",
+                    "5px solid",
+                  ],
                   borderColor: "#00B9E8",
                   cursor: "pointer",
                   borderRadius: "5px",
@@ -103,7 +134,7 @@ const Navbar = () => {
               </Text>
             </Link>
           </Box>
-          <Box>
+          <Box size={["xs", "sm", "md", "lg"]}>
             <Link
               to="projects"
               smooth={true}
@@ -113,11 +144,16 @@ const Navbar = () => {
               hashSpy={true}
             >
               <Text
-                fontSize="xl"
-                fontWeight="600"
+                fontSize={["xs", "sm", "md", "xl"]}
+                fontWeight={["400", "500", "600"]}
                 _hover={{
                   color: "#00B9E8",
-                  borderBottom: "5px solid",
+                  borderBottom: [
+                    "2px solid",
+                    "3px solid",
+                    "4px solid",
+                    "5px solid",
+                  ],
                   borderColor: "#00B9E8",
                   cursor: "pointer",
                   borderRadius: "5px",
@@ -127,7 +163,7 @@ const Navbar = () => {
               </Text>
             </Link>
           </Box>
-          <Box>
+          <Box size={["xs", "sm", "md", "lg"]}>
             <Link
               to="contact"
               smooth={true}
@@ -137,11 +173,16 @@ const Navbar = () => {
               hashSpy={true}
             >
               <Text
-                fontSize="xl"
-                fontWeight="600"
+                fontSize={["xs", "sm", "md", "xl"]}
+                fontWeight={["400", "500", "600"]}
                 _hover={{
                   color: "#00B9E8",
-                  borderBottom: "5px solid",
+                  borderBottom: [
+                    "2px solid",
+                    "3px solid",
+                    "4px solid",
+                    "5px solid",
+                  ],
                   borderColor: "#00B9E8",
                   cursor: "pointer",
                   borderRadius: "5px",
@@ -151,15 +192,20 @@ const Navbar = () => {
               </Text>
             </Link>
           </Box>
-          <Box _hover={{ cursor: "pointer" }}>
+          <Box _hover={{ cursor: "pointer" }} size={["xs", "sm", "md", "lg"]}>
             <Button
-              size="lg"
+              size={["xs", "sm", "md", "lg"]}
               colorScheme="blue"
               onClick={toggleColorMode}
               variant="ghost"
               _hover={{
                 color: "#00B9E8",
-                borderBottom: "5px solid",
+                borderBottom: [
+                  "2px solid",
+                  "3px solid",
+                  "4px solid",
+                  "5px solid",
+                ],
                 borderColor: "#00B9E8",
               }}
             >
