@@ -13,8 +13,8 @@ const Skills = () => {
     tc2 = "rgb(150, 150, 226)";
   }
   return (
-    <Box className="skills" pt="6rem">
-      <Heading mb="5rem" color={tc}>
+    <Box className="skills" pt={["1.5rem","2.5rem","4rem","6rem"]}>
+      <Heading mb={["2rem","3rem","4rem","5rem"]} color={tc} size={["2xl"]}>
         Tech Stack <span style={{color:tc2}}>&</span> Tools
       </Heading>
       <SkillCard />

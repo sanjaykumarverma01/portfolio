@@ -167,17 +167,17 @@ const Home = () => {
           ]}
           mt="1rem"
         >
-          <Box _hover={{ color: "teal" }}>
+          <Box _hover={{ color: "teal" }} fontSize={["20px","30px","40px","40px"]}>
             <a href="https://github.com/SK-WebDeveloper" target="_blank">
-              <BsGithub fontSize={["20px", "30px", "40px", "40px"]} />
+              <BsGithub  />
             </a>
           </Box>
-          <Box _hover={{ bgColor: "#0A66C2" }}>
+          <Box _hover={{ bgColor: "#0A66C2" }} fontSize={["20px", "30px", "40px", "40px"]}>
             <a
               href="https://www.linkedin.com/in/sanjaykumar-verma-a73349219/"
               target="_blank"
             >
-              <BsLinkedin fontSize={["20px", "30px", "40px", "40px"]} />
+              <BsLinkedin />
             </a>
           </Box>
         </Flex>
