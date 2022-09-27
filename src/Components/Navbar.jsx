@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { BsFillMoonFill, BsSun } from "react-icons/bs";
+import DrawerExample from "./Drawer";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -35,21 +36,30 @@ const Navbar = () => {
         alignContent="center"
         margin="auto"
         color={tc}
-        // direction={["column", "column", "row"]}
         size={["xs", "sm", "md", "lg"]}
       >
-        <Flex alignItems="center" size={["xs", "sm", "md", "lg"]}>
-          <Img
-            src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/logo%20png.png?raw=true"
-            alt="logo"
-            width={[5, 10, 15, 20]}
-            height={[5, 10, 15, 20]}
-          />
+        <Flex
+          justifyContent="space-between"
+          alignItems="center"
+          size={["xs", "sm", "md", "lg"]}
+        >
+          <Box display={["none", "none", "block", "block"]}>
+            <Img
+              src="https://github.com/SK-WebDeveloper/portfolio/blob/main/src/logo%20png.png?raw=true"
+              alt="logo"
+              width={[5, 10, 15, 20]}
+              height={[5, 10, 15, 20]}
+            />
+          </Box>
+          <Box display={["block", "block", "none", "none"]}>
+            <DrawerExample />
+          </Box>
         </Flex>
         <HStack
           direction={["column", "column", "row"]}
           gap={["3", "6", "8", "10"]}
           size={["xs", "sm", "md", "lg"]}
+          display={["none", "none", "flex", "Flex"]}
         >
           <Box size={["xs", "sm", "md", "lg"]}>
             <Link
@@ -65,7 +75,12 @@ const Navbar = () => {
                 fontWeight={["400", "500", "600"]}
                 _hover={{
                   color: "#00B9E8",
-                  borderBottom: "5px solid",
+                  borderBottom: [
+                    "2px solid",
+                    "3px solid",
+                    "4px solid",
+                    "5px solid",
+                  ],
                   borderColor: "#00B9E8",
                   cursor: "pointer",
                   borderRadius: "5px",
