@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <Box
       className="main"
-      pt={["0px", "0px", "60px", "70px"]}
+      pt={["30px", "40px", "60px", "70px"]}
       size={["xs", "sm", "md", "lg"]}
     >
       <Flex

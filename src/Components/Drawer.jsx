@@ -33,6 +33,7 @@ function DrawerExample() {
               activeClass="active"
               spy={true}
               hashSpy={true}
+              onClick={onClose}
             >
               Home
             </Link>
@@ -45,6 +46,7 @@ function DrawerExample() {
               activeClass="active"
               spy={true}
               hashSpy={true}
+              onClick={onClose}
             >
               About
             </Link>
@@ -57,6 +59,7 @@ function DrawerExample() {
               activeClass="active"
               spy={true}
               hashSpy={true}
+              onClick={onClose}
             >
               Skills
             </Link>
@@ -69,6 +72,7 @@ function DrawerExample() {
               activeClass="active"
               spy={true}
               hashSpy={true}
+              onClick={onClose}
             >
               Projects
             </Link>
@@ -81,6 +85,7 @@ function DrawerExample() {
               activeClass="active"
               spy={true}
               hashSpy={true}
+              onClick={onClose}
             >
               Contact
             </Link>
