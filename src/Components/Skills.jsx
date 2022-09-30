@@ -1,5 +1,6 @@
 import { Heading, Box, useColorMode, Text } from "@chakra-ui/react";
 import React from "react";
+import GithubCard from "./GithubCard";
 import SkillCard from "./SkillCard";
 
 const Skills = () => {
@@ -18,6 +19,7 @@ const Skills = () => {
         Tech Stack <span style={{color:tc2}}>&</span> Tools
       </Heading>
       <SkillCard />
+      <GithubCard />
     </Box>
   );
 };
