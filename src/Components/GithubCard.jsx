@@ -61,7 +61,7 @@ const GithubCard = () => {
         <Image
           w="100%"
           src={colorMode === "light" ? contribution1 : contribution2}
-          borderRadius="10px"
+          borderRadius="5px"
         />
       </Box>
     </Box>
