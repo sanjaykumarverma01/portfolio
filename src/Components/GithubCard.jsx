@@ -58,6 +58,7 @@ const GithubCard = () => {
         m="auto"
         mt={["10px", "10px", "25px", "35px"]}
       >
+        <Heading color={tc}>Github Calendar</Heading>
         <Image
           w="100%"
           src={colorMode === "light" ? contribution1 : contribution2}
