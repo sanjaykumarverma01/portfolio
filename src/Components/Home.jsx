@@ -168,7 +168,7 @@ const Home = () => {
           mt="1rem"
         >
           <Box _hover={{ color: "teal" }} fontSize={["20px","30px","40px","40px"]}>
-            <a href="https://github.com/SK-WebDeveloper" target="_blank">
+            <a href="https://github.com/sanjaykumarverma01" target="_blank">
               <BsGithub  />
             </a>
           </Box>
