@@ -9,11 +9,11 @@ const GithubCard = () => {
     var tc = "#93989E";
   }
   if (colorMode === "light") {
-    var bc = "2px solid teal";
+    // var bc = "2px solid teal";
     var tc = "#00B9E8";
   }
   return (
-    <Box size={["xs", "sm", "md", "lg"]}>
+    <Box size={["xs", "sm", "md", "lg"]} mt={["20px", "30px", "40px", "50px"]}>
       <Heading color={tc}>Github Stats</Heading>
       <Flex
         w={["90%", "90%", "80%", "80%"]}
@@ -26,6 +26,7 @@ const GithubCard = () => {
           className="dev"
           w={["90%", "90%", "45%", "45%"]}
           m={["auto", "auto", "none", "none"]}
+          boxShadow="md"
         >
           <Image
             w="100%"
@@ -58,6 +59,8 @@ const GithubCard = () => {
         w={["80%", "80%", "75%", "76%"]}
         m="auto"
         mt={["10px", "10px", "25px", "35px"]}
+        border={bc}
+        borderRadius="5px"
       >
         
         <Image
