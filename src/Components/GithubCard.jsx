@@ -52,13 +52,14 @@ const GithubCard = () => {
           />
         </Box>
       </Flex>
+      <Heading color={tc} mt={["20px", "30px", "40px", "50px"]}>Github Calendar</Heading>
       <Box
         className="dev"
         w={["80%", "80%", "75%", "76%"]}
         m="auto"
         mt={["10px", "10px", "25px", "35px"]}
       >
-        <Heading color={tc}>Github Calendar</Heading>
+        
         <Image
           w="100%"
           src={colorMode === "light" ? contribution1 : contribution2}
