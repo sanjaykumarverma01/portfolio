@@ -15,7 +15,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 const Home = () => {
   const handleDownload = async () => {
     saveAs(
-      "https://drive.google.com/file/d/10kXaixyFJPgtIIUPF8JE_OI9xSml9Z2W/view?usp=sharinghttps://drive.google.com/file/d/10kXaixyFJPgtIIUPF8JE_OI9xSml9Z2W/view?usp=sharing",
+      "https://drive.google.com/file/d/1OOMG5dCkHP_FyiRktTcI862L6tgVsvXA/view?usp=sharing",
       "Sanjaykumar_Resume.pdf"
     );
   };
