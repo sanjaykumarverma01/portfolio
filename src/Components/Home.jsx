@@ -13,10 +13,10 @@ import { saveAs } from "file-saver";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Home = () => {
-  const handleDownload = async () => {
-    saveAs(
-      "https://drive.google.com/file/d/1YTe7vYKHrqun2CZU3Lm6Fy32f5F6yJE-/view?usp=sharing",
-      "Sanjaykumar_Resume.pdf"
+  const handleDownload = () => {
+    window.open(
+      "https://drive.google.com/file/d/13glAAJDaMXdXr8iCqUOMSZT8BDzXIVxU/view?usp=sharing",
+      "_blank"
     );
   };
 
@@ -148,16 +148,16 @@ const Home = () => {
       <Box mt={["2rem", "3rem", "4rem", "5rem"]}>
         <Box>
           <Heading color={t}>Get in Touch</Heading>
-          <Text fontSize={["15px","16px","17px","18px"]} mt=".5rem">
+          <Text fontSize={["15px", "16px", "17px", "18px"]} mt=".5rem">
             Whether you want to get in touch, or talk about a project
             collaboration
           </Text>
-          <Text fontSize="18px" fontWeight={["400","500"]} mt=".5rem">
+          <Text fontSize="18px" fontWeight={["400", "500"]} mt=".5rem">
             Feel free to contact me
           </Text>
         </Box>
         <Flex
-          width={["15%","15%","10%","10%"]}
+          width={["15%", "15%", "10%", "10%"]}
           margin="auto"
           justifyContent={[
             "space-between",
@@ -167,12 +167,18 @@ const Home = () => {
           ]}
           mt="1rem"
         >
-          <Box _hover={{ color: "teal" }} fontSize={["20px","30px","40px","40px"]}>
+          <Box
+            _hover={{ color: "teal" }}
+            fontSize={["20px", "30px", "40px", "40px"]}
+          >
             <a href="https://github.com/sanjaykumarverma01" target="_blank">
-              <BsGithub  />
+              <BsGithub />
             </a>
           </Box>
-          <Box _hover={{ bgColor: "#0A66C2" }} fontSize={["20px", "30px", "40px", "40px"]}>
+          <Box
+            _hover={{ bgColor: "#0A66C2" }}
+            fontSize={["20px", "30px", "40px", "40px"]}
+          >
             <a
               href="https://www.linkedin.com/in/sanjaykumar-verma-a73349219/"
               target="_blank"
